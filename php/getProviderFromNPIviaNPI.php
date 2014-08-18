@@ -4,7 +4,7 @@ include('config.php');
 if( $conn === false )
       { die( FormatErrors( sqlsrv_errors() ) ); }
 
-$tsql = "Exec AC_GetNPI_UsingNPI ? ";
+$tsql = "Exec GetNPI_UsingNPI ? ";
 
 $params = array( $_GET['NPI'] );
 $getNPI = sqlsrv_query( $conn, $tsql, $params);
