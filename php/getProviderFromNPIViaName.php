@@ -4,7 +4,7 @@ include('config.php');
 if( $conn === false )
       { die( FormatErrors( sqlsrv_errors() ) ); }
 
-$tsql = "Exec AC_GetNPI_UsingName ?, ?, ?, ?, ? ";
+$tsql = "Exec GetNPI_UsingName ?, ?, ?, ?, ? ";
 
 $params = array( Trim($_GET['name']), Trim($_GET['lastname']), Trim($_GET['firstname']), $_GET['type'], $_GET['location'] );
 $getNPI = sqlsrv_query( $conn, $tsql, $params);
