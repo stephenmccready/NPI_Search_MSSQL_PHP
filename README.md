@@ -7,3 +7,5 @@ Back-end database is MS SQL
 Using javascript, PHP and jQuery
 
 http://www.cms.gov/Regulations-and-Guidance/HIPAA-Administrative-Simplification/NationalProvIdentStand/DataDissemination.html
+
+Demo site: http://coolthebeans.com/npi/
